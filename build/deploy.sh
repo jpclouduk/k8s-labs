@@ -47,6 +47,7 @@ EOF
 # restart containerd
 sudo systemctl restart containerd
 
+
 ##### Deploy kubeadm, kubelet and kubectl
 # update all repos
 sudo apt-get update
@@ -65,3 +66,5 @@ sudo apt-get update
 sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 
+# start kubelet
+sudo systemctl enable --now kubelet
