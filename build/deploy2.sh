@@ -38,8 +38,8 @@ sudo apt-get install containerd.io
 ##### UPDATE CGROUPS
 # update containerd config
 sudo containerd config default | sudo tee /etc/containerd/config.toml
-sed -i 's/systemd_cgroup = false/systemd_cgroup = true/g' /etc/containerd/config.toml
-sed -i 's/pause:3.8/pause:3.10/g' /etc/containerd/config.toml
+sudo sed -i 's/systemd_cgroup = false/systemd_cgroup = true/g' /etc/containerd/config.toml
+sudo sed -i 's/pause:3.8/pause:3.10/g' /etc/containerd/config.toml
 
 # restart containerd
 sudo systemctl restart containerd
