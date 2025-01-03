@@ -1,0 +1,33 @@
+
+
+#### Key Value Pair
+
+Fruit: Apple
+Vegetable: Carrot
+Liquid: Water
+Meat: Chicken
+
+
+#### Array/Lists
+
+Fruits:
+-  Orange
+-  Apple
+-  Banana
+
+Vegetables:
+-  Carrot
+-  Cauliflower
+-  Tomato
+
+#### Dictionary/Map
+
+Banana:
+  Calories: 105
+  Fat: 0.4 g
+  Carbs: 27 g
+
+Grapes:
+  Calories: 62
+  Fat: 0.3 g
+  Carbs: 16 g

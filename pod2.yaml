@@ -8,5 +8,5 @@ metadata:
 spec:
   containers:
     - name: nginx-container
-      image: nginx
+      image: 192.168.56.1:5000/nginx
       imagePullPolicy: IfNotPresent
