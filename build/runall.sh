@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+##### Set VARs
+kver="1.32"
+
 # push deploy script to all servers
 for i in controlplane node01 node02
 do
@@ -25,7 +28,7 @@ vagrant ssh -c "sudo chown vagrant. /home/vagrant/.kube/config" controlplane
 vagrant ssh -c "cat .kube/config" controlplane > ~/.kube/config
 
 # deploy network addon to kubernetes 
-kubectl apply -f https://reweave.azurewebsites.net/k8s/v1.29/net.yaml
+kubectl apply -f https://reweave.azurewebsites.net/k8s/v${kver}/net.yaml
 
 # edit weave-net config to include 10.244 range
 kubectl get ds weave-net -n kube-system -o yaml | tee weave.yaml >/dev/null 2>&1
